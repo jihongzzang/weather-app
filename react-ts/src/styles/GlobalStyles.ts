@@ -12,11 +12,18 @@ const GlobalStyles = createGlobalStyle`
     body {
         font-family: 'Noto Sans KR', sans-serif;
         font-size: 1.6rem;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: ${({ theme }) => theme.bodyColor};
+        
         line-height: 1.5;
         letter-spacing: -0.375px;
         font-weight: 400;
+        
         -webkit-overflow-scrolling: touch;
-        background: ${({ theme }) => theme.backgroundColor};
+        
     }
 
     #root {

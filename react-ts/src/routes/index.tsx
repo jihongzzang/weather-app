@@ -1,11 +1,11 @@
 import { Route, Routes } from 'react-router-dom';
 
-import Home from '@/components/Home';
+import WeatherApp from '@/components/WeatherApp';
 
 export default function AppRoutes() {
   return (
     <Routes>
-      <Route index element={<Home />} />
+      <Route index element={<WeatherApp />} />
     </Routes>
   );
 }
