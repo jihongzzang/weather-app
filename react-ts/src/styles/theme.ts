@@ -1,28 +1,19 @@
 import { DefaultTheme } from 'styled-components';
 
-// Light Theme
-const lightTheme: DefaultTheme = {
-  body: '#FFF',
-  text: '#363537',
-  toggleBorder: '#FFF',
-  background: '#363537',
-  cardBackground: '#F8F8F8',
-  buttonBackground: '#E0E0E0',
-  buttonText: '#363537',
+import palette from './palette';
+
+export const darkTheme: DefaultTheme = {
+  palette,
+
+  bodyColor: palette.white,
+  backgroundColor: palette['grey-900'],
+  textColor: palette['grey-900-contrast'],
 };
 
-// Dark Theme
-const darkTheme: DefaultTheme = {
-  body: '#363537',
-  text: '#FAFAFA',
-  toggleBorder: '#6B8096',
-  background: '#999',
-  cardBackground: '#424242',
-  buttonBackground: '#555',
-  buttonText: '#FAFAFA',
-};
+export const lightTheme: DefaultTheme = {
+  palette,
 
-export const theme = {
-  light: lightTheme,
-  dark: darkTheme,
+  bodyColor: palette.white,
+  backgroundColor: palette.white,
+  textColor: palette['grey-900'],
 };

@@ -16,6 +16,7 @@ const GlobalStyles = createGlobalStyle`
         letter-spacing: -0.375px;
         font-weight: 400;
         -webkit-overflow-scrolling: touch;
+        background: ${({ theme }) => theme.backgroundColor};
     }
 
     #root {
