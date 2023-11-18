@@ -25,6 +25,7 @@ const StyledText = styled(Text)((props) => {
 
   return {
     color: theme.textColor,
+    transition: '0.4s ease',
   };
 });
 

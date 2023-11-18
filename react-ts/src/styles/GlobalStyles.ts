@@ -31,6 +31,10 @@ const GlobalStyles = createGlobalStyle`
 
     * {
         box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        outline: none;
     }
 
     a { 
@@ -41,28 +45,6 @@ const GlobalStyles = createGlobalStyle`
 
     svg {
         flex-shrink: 0;
-    }
-
-    /* Chrome, Safari, Edge, Opera */
-    input::-webkit-outer-spin-button,
-    input::-webkit-inner-spin-button {
-        -webkit-appearance: none;
-        margin: 0;
-    }
-
-    .scrollbar-hide::-webkit-scrollbar {
-        display: none;
-    }
-
-    select {
-        -webkit-appearance: none;
-        -moz-appearance: none;
-        appearance: none;
-        outline: none;
-    }
-
-    select::-ms-expand {
-        display: none;
     }
 `;
 

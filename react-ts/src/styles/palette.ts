@@ -92,6 +92,7 @@ const palette: Partial<DefaultTheme['palette']> = {
   'cyan-700': '#0097a7',
   'cyan-800': '#00838f',
   'cyan-900': '#006064',
+  'cyan-1000': '#082f49',
 
   teal: '#009688',
   'teal-100': '#b2dfdb',

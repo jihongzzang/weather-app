@@ -1,5 +1,12 @@
-function Button() {
-  return <div>index</div>;
+import styled from 'styled-components';
+
+interface StyledButtonProps extends React.ComponentPropsWithoutRef<'button'> {
+  $darkmode?: boolean;
 }
 
-export default Button;
+const StyledButton = styled.button<StyledButtonProps>`
+  cursor: pointer;
+  transition: 0.4s ease;
+`;
+
+export default StyledButton;

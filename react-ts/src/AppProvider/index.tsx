@@ -12,9 +12,10 @@ type AppProviderProps = {
 
 export default function AppProvider({ children }: AppProviderProps) {
   const { isDarkMode } = useDarkMode();
+
   return (
     <ErrorBoundary fallback={<p>Something went wrong</p>}>
-      <ThemeProvider theme={isDarkMode ? lightTheme : darkTheme}>
+      <ThemeProvider theme={isDarkMode ? darkTheme : lightTheme}>
         <GlobalStyles />
         <BrowserRouter>{children}</BrowserRouter>
       </ThemeProvider>

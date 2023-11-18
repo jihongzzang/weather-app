@@ -1,16 +1,25 @@
-// import NotFound from '../NotFound';
+import { useWeaherStore } from '../../hooks';
+import Header from '../Header';
+import NotFound from '../NotFound';
+import SearchWeather from '../SearchWeather';
 
-import CardBottom from './CardBottom';
-import CardMain from './CardMain';
-// import CardTop from './CardTop';
+import WeatherBox from './WeatherBox';
+import WeatherDetails from './WeatherDetails';
+
+import { ContainerProps } from '@/components/atoms';
 
 function WeatherCard() {
+  const { renderType } = useWeaherStore();
+
   return (
     <>
-      {/* <CardTop /> */}
-      {/* <NotFound /> */}
-      <CardMain />
-      <CardBottom />
+      <Header />
+      <ContainerProps $rendertype={renderType}>
+        <SearchWeather />
+        <NotFound />
+        <WeatherBox />
+        <WeatherDetails />
+      </ContainerProps>
     </>
   );
 }

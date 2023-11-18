@@ -94,6 +94,7 @@ declare module 'styled-components' {
       'cyan-700': string;
       'cyan-800': string;
       'cyan-900': string;
+      'cyan-1000': string;
 
       teal: string;
       'teal-100': string;
@@ -232,5 +233,7 @@ declare module 'styled-components' {
     bodyColor?: string;
     textColor?: string;
     backgroundColor?: string;
+    borderColor?: string;
+    buttonColor?: string;
   }
 }
